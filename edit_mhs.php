@@ -1,4 +1,5 @@
 <?php
+require_once 'config/session.php';
 require_once 'config/koneksi.php';
 
 $nim = $_GET['nim'];

@@ -1,5 +1,5 @@
 <?php
-
+require_once 'config/session.php';
 require_once 'config/koneksi.php';
 
 
@@ -7,7 +7,6 @@ $nim = $_POST['nim'];
 $nama = $_POST['nama'];
 $jurusan = $_POST['jurusan'];
 $alamat = $_POST['alamat'];
-
 
 //UPDATE namatable SET kolom = value, ....... WHERE kolom = value;
 $save = mysqli_query($con, "UPDATE mahasiswa SET nama = '$nama', jurusan = '$jurusan', alamat = '$alamat' WHERE nim = '$nim'");
